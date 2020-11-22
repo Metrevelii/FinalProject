@@ -2,3 +2,27 @@
 @import './../modules/classes.scss';
 @import './../modules/mixins.scss';
 @import './../modules/variables.scss';
+@import './../main/keyframes.scss';
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)),url(../images/lp-background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .vibrate-2 {
+        &:hover{
+            animation: vibrate-2 0.3s linear infinite both;
+        }
+    }
+    .text-box {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 500px;
+        transform: translate(-10%, -5%);
+    }
+    .text-box-headline {
+        color: #fff;
+    }
+}
