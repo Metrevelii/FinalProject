@@ -10,6 +10,11 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    .navbar-txt {
+        @extend %ttbold;
+        font-size: $fontsize02;
+    
+    }
     .vibrate-2 {
         &:hover{
             animation: vibrate-2 0.3s linear infinite both;
@@ -24,5 +29,35 @@ header {
     }
     .text-box-headline {
         color: #fff;
+        @extend %ttregular;
+        font-size: $fontsize05;
     }
+    .show-more {
+        @extend %ttsemibold;
+    }
+    .show-fullstory {
+        @extend %ttsemibold;
+    }
+
+}
+
+section {
+    margin-top: 70px;
+    .band-story {
+        max-width: 800px;
+        width: 100%;
+        margin:0 auto;
+        padding: 30px;
+    }
+    .band-story-headline {
+        @extend %ttregular;
+        font-size : $fontsize06;
+        text-align: center;
+    }
+    .band-story-para {
+        @extend %nerko;
+        font-size: $fontsize03;
+        margin-top: 20px;
+    }
+    
 }
