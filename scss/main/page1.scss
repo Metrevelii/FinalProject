@@ -59,5 +59,25 @@ section {
         font-size: $fontsize03;
         margin-top: 20px;
     }
-    
+    .band-members-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .card-title {
+        @extend %ttexlight;
+        font-size : $fontsize04;
+    }
+    .card-text {
+        @extend %ttregular;
+        font-size : $fontsize03;
+    }
+    .card-img {
+        
+        &:hover {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+    }
 }
+
+

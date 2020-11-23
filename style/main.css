@@ -84,10 +84,13 @@ section .band-story-para {
 header .navbar-txt {
   font-family: 'Titillium Web Bold'; }
 
+section .card-title {
+  font-family: 'Titillium Web EL'; }
+
 header .show-more, header .show-fullstory {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .band-story-headline {
+header .text-box-headline, section .band-story-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
 /**
@@ -108,6 +111,32 @@ header .text-box-headline, section .band-story-headline {
     transform: translate(-2px, -2px); }
   100% {
     transform: translate(0); } }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out; }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in; }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out; }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in; }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out; } }
+
+@keyframes rotate-in-2-cw {
+  0% {
+    transform: rotate(-45deg);
+    opacity: 0; }
+  100% {
+    transform: rotate(0);
+    opacity: 1; } }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)), url(../images/lp-background.jpg);
@@ -142,6 +171,16 @@ section {
   section .band-story-para {
     font-size: 18px;
     margin-top: 20px; }
+  section .band-members-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px; }
+  section .card-title {
+    font-size: 24px; }
+  section .card-text {
+    font-size: 18px; }
+  section .card-img:hover {
+    animation: heartbeat 1.5s ease-in-out infinite both; }
 
 section .band-story-para {
   font-family: 'Nerko One'; }
@@ -149,10 +188,13 @@ section .band-story-para {
 header .navbar-txt {
   font-family: 'Titillium Web Bold'; }
 
+section .card-title {
+  font-family: 'Titillium Web EL'; }
+
 header .show-more, header .show-fullstory {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .band-story-headline {
+header .text-box-headline, section .band-story-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
 /**
@@ -173,3 +215,29 @@ header .text-box-headline, section .band-story-headline {
     transform: translate(-2px, -2px); }
   100% {
     transform: translate(0); } }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out; }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in; }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out; }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in; }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out; } }
+
+@keyframes rotate-in-2-cw {
+  0% {
+    transform: rotate(-45deg);
+    opacity: 0; }
+  100% {
+    transform: rotate(0);
+    opacity: 1; } }
