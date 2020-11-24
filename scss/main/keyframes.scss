@@ -59,3 +59,13 @@
       opacity: 1;
     }
   }
+
+
+  @keyframes slide-fwd-center {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translateZ(160px);
+    }
+  }

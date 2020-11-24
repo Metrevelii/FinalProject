@@ -22,3 +22,11 @@
 %ttregular {
     font-family: 'Titillium Web Regular';
 }
+
+
+%headline {
+    text-align: center;
+    font-size: $fontsize04;
+    @extend %ttexlight;
+    color: $color03;
+}

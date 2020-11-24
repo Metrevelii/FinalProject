@@ -78,20 +78,25 @@
   font-style: normal;
   font-display: swap; }
 
-section .band-story-para {
+section .band-story-para, section .anniversary-para {
   font-family: 'Nerko One'; }
 
 header .navbar-txt {
   font-family: 'Titillium Web Bold'; }
 
-section .card-title {
+section .band-story-headline, section .band-members-headline, section .gallery-headline {
   font-family: 'Titillium Web EL'; }
 
-header .show-more, header .show-fullstory {
+header .show-more, header .show-fullstory, section .card-title {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .band-story-headline, section .card-text {
+header .text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
+
+section .band-story-headline, section .band-members-headline, section .gallery-headline {
+  text-align: center;
+  font-size: 24px;
+  color: #40407a; }
 
 /**
  * ----------------------------------------
@@ -138,25 +143,39 @@ header .text-box-headline, section .band-story-headline, section .card-text {
     transform: rotate(0);
     opacity: 1; } }
 
+@keyframes slide-fwd-center {
+  0% {
+    transform: translateZ(0); }
+  100% {
+    transform: translateZ(160px); } }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)), url(../images/lp-background.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
+  header .navbar {
+    background-color: #34495e;
+    opacity: 0.8; }
   header .navbar-txt {
-    font-size: 14px; }
+    font-size: 18px;
+    color: #000; }
   header .vibrate-2:hover {
     animation: vibrate-2 0.3s linear infinite both; }
   header .text-box {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 5%;
     width: 500px;
     transform: translate(-10%, -5%); }
   header .text-box-headline {
-    color: #fff;
+    color: #f5f6fa;
     font-size: 42px; }
+  header .show-more {
+    color: #34495e; }
+  header .show-fullstory {
+    color: #f5f6fa; }
 
 section {
   margin-top: 70px; }
@@ -165,37 +184,94 @@ section {
     width: 100%;
     margin: 0 auto;
     padding: 30px; }
-  section .band-story-headline {
-    font-size: 36px;
-    text-align: center; }
+    section .band-story:after {
+      display: block;
+      height: 2px;
+      background-color: #40407a;
+      content: " ";
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 70px; }
   section .band-story-para {
     font-size: 18px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #34495e; }
+  section .anniversary-para {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #34495e; }
   section .band-members-section {
     display: flex;
-    justify-content: space-between;
-    margin-top: 70px; }
+    justify-content: space-around;
+    margin-top: 70px;
+    flex-wrap: wrap; }
   section .card-title {
-    font-size: 24px; }
+    font-size: 24px;
+    color: #40407a; }
   section .card-text {
-    font-size: 18px; }
+    font-size: 18px;
+    color: #34495e; }
   section .card-img:hover {
     animation: heartbeat 1.5s ease-in-out infinite both; }
+  section .gallery-section {
+    padding: 0; }
+  section .gallery-headline {
+    margin-bottom: 30px; }
+    section .gallery-headline:after {
+      display: block;
+      height: 2px;
+      background-color: #40407a;
+      content: " ";
+      width: 50px;
+      margin: 0 auto;
+      margin-top: 20px; }
+  section .gallery-showcase {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-inline-start: 0px;
+    margin-block-end: 0;
+    margin-block-start: 0; }
+  section .gallery-showcase-li {
+    display: block;
+    width: 25%;
+    height: 100%; }
+  section .gallery-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; }
+  section .gallery-img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s; }
+    section .gallery-img:hover {
+      opacity: 1;
+      transform: scale(1.03); }
 
-section .band-story-para {
+section .band-story-para, section .anniversary-para {
   font-family: 'Nerko One'; }
 
 header .navbar-txt {
   font-family: 'Titillium Web Bold'; }
 
-section .card-title {
+section .band-story-headline, section .band-members-headline, section .gallery-headline {
   font-family: 'Titillium Web EL'; }
 
-header .show-more, header .show-fullstory {
+header .show-more, header .show-fullstory, section .card-title {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .band-story-headline, section .card-text {
+header .text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
+
+section .band-story-headline, section .band-members-headline, section .gallery-headline {
+  text-align: center;
+  font-size: 24px;
+  color: #40407a; }
 
 /**
  * ----------------------------------------
@@ -241,3 +317,9 @@ header .text-box-headline, section .band-story-headline, section .card-text {
   100% {
     transform: rotate(0);
     opacity: 1; } }
+
+@keyframes slide-fwd-center {
+  0% {
+    transform: translateZ(0); }
+  100% {
+    transform: translateZ(160px); } }
