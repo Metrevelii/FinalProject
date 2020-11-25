@@ -81,10 +81,7 @@
 section .band-story-para, section .anniversary-para {
   font-family: 'Nerko One'; }
 
-header .navbar-txt {
-  font-family: 'Titillium Web Bold'; }
-
-section .band-story-headline, section .band-members-headline, section .gallery-headline {
+section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
 header .show-more, header .show-fullstory, section .card-title {
@@ -93,7 +90,7 @@ header .show-more, header .show-fullstory, section .card-title {
 header .text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
-section .band-story-headline, section .band-members-headline, section .gallery-headline {
+section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   text-align: center;
   font-size: 24px;
   color: #40407a; }
@@ -155,14 +152,44 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
-  header .navbar {
-    background-color: #34495e;
-    opacity: 0.8; }
-  header .navbar-txt {
-    font-size: 18px;
-    color: #000; }
-  header .vibrate-2:hover {
-    animation: vibrate-2 0.3s linear infinite both; }
+  header .lp-logo {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0; }
+  header .main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px; }
+  header .main-nav-li {
+    display: inline-block;
+    margin-left: 40px; }
+  header .navbar-txt:link, header .navbar-txt:visited {
+    padding: 8px 0;
+    color: #a366ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; }
+  header .navbar-txt:hover, header .navbar-txt:active {
+    border-bottom: 2px solid #40407a; }
+  header .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999; }
+    header .sticky .main-nav {
+      margin-top: 18px; }
+    header .sticky .main-nav-li:link, header .sticky .main-nav-li:visited {
+      padding: 16px 0;
+      color: #353b48; }
+    header .sticky .lp-logo {
+      display: block; }
   header .text-box {
     position: absolute;
     top: 15%;
@@ -253,13 +280,38 @@ section {
       opacity: 1;
       transform: scale(1.03); }
 
+.contact-form-section .contact-form {
+  width: 60%;
+  margin: 0 auto; }
+
+.contact-form-section .form-label {
+  font-size: 18px;
+  color: #00001a;
+  margin-top: 20px; }
+
+.contact-form-section input[type=text],
+.contact-form-section input[type=email],
+.contact-form-section select,
+.contact-form-section textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  resize: none; }
+
+.contact-form-section textarea {
+  height: 100px; }
+
+.contact-form-section input[type=checkbox] {
+  margin: 10px 5px 10px 0; }
+
+.contact-form-section *:focus {
+  outline: none; }
+
 section .band-story-para, section .anniversary-para {
   font-family: 'Nerko One'; }
 
-header .navbar-txt {
-  font-family: 'Titillium Web Bold'; }
-
-section .band-story-headline, section .band-members-headline, section .gallery-headline {
+section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
 header .show-more, header .show-fullstory, section .card-title {
@@ -268,7 +320,7 @@ header .show-more, header .show-fullstory, section .card-title {
 header .text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
-section .band-story-headline, section .band-members-headline, section .gallery-headline {
+section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   text-align: center;
   font-size: 24px;
   color: #40407a; }
