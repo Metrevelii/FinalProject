@@ -37,18 +37,19 @@ header {
         &:link ,
         &:visited {
             padding: 8px 0;
-            color: $color07;
+            color: $color09;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 90%;
             border-bottom: 2px solid transparent;
             transition: border-bottom 0.2s;
+            @extend %ttsemibold;
         }
     }
     .navbar-txt {
         &:hover,
         &:active {
-            border-bottom: 2px solid $color03;
+            border-bottom: 2px solid $color09;
         }
     }
     //sticky nav
@@ -62,6 +63,13 @@ header {
         z-index: 9999;
         .main-nav {
             margin-top: 18px;
+        }
+        .navbar-txt {
+            color: $color08;
+            &:hover,
+            &:active {
+                border-bottom: 2px solid $color08;
+            }
         }
        .main-nav-li {
             &:link ,
@@ -219,14 +227,26 @@ section {
 
 
 .contact-form-section {
+    background: $color05;
     
     .contact-form-headline {
         @extend %headline;
+        padding: 20px 0;
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: $color03;
+            content: " ";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+        } 
         
     }
     .contact-form {
         width: 60%;
         margin: 0 auto;
+        padding:0 0 20px 0;
     }
     .form-label {
         font-size : $fontsize03;
@@ -255,3 +275,47 @@ section {
 
 *:focus {outline: none;}
 }  
+
+.site-footer {
+    background-color: $color05;
+    margin-top: 70px;
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .contact-info {
+        padding: 20px 0 0;
+    }
+    .contact-info-headline {
+        font-size: $fontsize04;
+        color: $color08;
+        text-align: center;
+        @extend %ttsemibold;
+        padding: 0 0 10px;
+    }
+    .social-links-box {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0;
+        
+    }
+    
+    .social-img {
+        max-width: 40px;
+        width: 100%;
+    }
+    .footer-bottom {
+        padding: 5px 0;
+        margin: 20px 0 0;
+        text-align: center;
+    }
+    .footer-bottom-txt {
+        font-size: $fontsize02;
+        color: $color08;
+        @extend %nerko;
+        margin: 0px;
+        padding:0 0 10px;
+    }
+    }
