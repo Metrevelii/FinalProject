@@ -13,32 +13,65 @@
 <body>
     <header class="js--section-home">
         <nav>
-          <div class="container">
+          <div class="container main-navigation">
             <img src="images/lp-logo.png" alt="lp logo" class="lp-logo">
             <ul class="main-nav">
-              <li class="main-nav-li vibrate-2">
+              <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-home" href="#">Home</a>
               </li>
-              <li class="main-nav-li vibrate-2">
+              <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-gallery" href="#">Gallery</a>
               </li>
-              <li class="main-nav-li vibrate-2">
+              <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-songs" href="#">Songs</a>
               </li>
-              <li class="main-nav-li vibrate-2">
+              <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-members" href="#">Members</a>
               </li>
-              <li class="main-nav-li vibrate-2">
+              <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-contact" href="#">Contact</a>
               </li>
             </ul>
           </div>
+        
+          <!-- responsive navbar -->
+        
+<div class="fixed-top navbar-phone">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="main-nav-phone">
+        <li class="main-nav-li-phone">
+          <a class="navbar-txt js--scroll-to-home" href="#">Home</a>
+        </li>
+        <li class="main-nav-li-phone">
+          <a class="navbar-txt js--scroll-to-gallery" href="#">Gallery</a>
+        </li>
+        <li class="main-nav-li-phone">
+          <a class="navbar-txt js--scroll-to-songs" href="#">Songs</a>
+        </li>
+        <li class="main-nav-li-phone">
+          <a class="navbar-txt js--scroll-to-members" href="#">Members</a>
+        </li>
+        <li class="main-nav-li-phone">
+          <a class="navbar-txt js--scroll-to-contact" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+        <!-- ends here-->
         </nav>
-        <div class="text-box container-md">
+        <div class="text-box">
           <h1 class="text-box-headline">Linkin Park announces 20th anniversary reissue of ‘Hybrid Theory’</h1>
             <a href="#" class="btn btn-outline-secondary show-fullstory js--scroll-to-story">Full Story</a>
         </div>
     </header>
+    
     <section class="js--section-story">
       <div class="container">
         <div class="band-story">
@@ -200,12 +233,13 @@
     
     
     </section>
-    <section class="playlist-section">
+    <!-- <section class="playlist-section">
       
 
 
-    </section>
-    <section class="contact-form-section js--section-contact container">
+    </section> -->
+    <section class="contact-form-section js--section-contact">
+      <div class="container">
         <h2 class="contact-form-headline">We're happy to hear from you</h2>
         <form class="contact-form" method="post" action="#">
         <div class="form-content">
@@ -231,6 +265,8 @@
         </div>
         <button type="button" class="btn btn-outline-secondary">Send it!</button>
         </form>
+      </div>
+        
       </section>
 
 
@@ -250,7 +286,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-bottom-txt">This webpage was created for the course "GeoLab - Front-End web programming" by Zauri Metreveli.</p>
+        <p class="footer-bottom-txt">This webpage was created for the course "GeoLab - Front-End web programming".</p>
         <p class="footer-bottom-txt">November, 2020</p>
       </div>
 

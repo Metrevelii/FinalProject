@@ -5,10 +5,21 @@
 @import './../main/keyframes.scss';
 @import './../main/media.scss';
 
-
+//mobile
 // BASIC SETUP
 
-
+// .mobile-nav-icon {
+    //     display: flex;
+    //     float: right;
+    //     cursor: pointer;
+    //     display: block;
+    //     margin-top: 30px;
+    // }
+    // .menu-icon {
+    //     font-size: 200%;
+    //     color : $color05;
+    // }
+    
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)),url(../images/lp-background.jpg);
@@ -16,6 +27,9 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    .navbar-phone {
+        display: none;
+    }
     .lp-logo {
         display: none;
         height: 50px;
@@ -25,19 +39,19 @@ header {
         
     }
     .main-nav {
-        float:right;
+        display: flex;
+        justify-content: flex-end;
         list-style: none;
-        margin-top: 55px;
+        padding: 50px 0 0;
     }
     .main-nav-li {
-        display: inline-block;
         margin-left: 40px;
     }
     .navbar-txt {
         &:link ,
         &:visited {
             padding: 8px 0;
-            color: $color09;
+            color: $color05;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 90%;
@@ -49,7 +63,7 @@ header {
     .navbar-txt {
         &:hover,
         &:active {
-            border-bottom: 2px solid $color09;
+            border-bottom: 2px solid $color05;
         }
     }
     //sticky nav
@@ -62,7 +76,8 @@ header {
         box-shadow: 0 2px 2px #efefef;
         z-index: 9999;
         .main-nav {
-            margin-top: 18px;
+            margin: 0 0 0;
+            padding: 15px 0;
         }
         .navbar-txt {
             color: $color08;
@@ -74,7 +89,7 @@ header {
        .main-nav-li {
             &:link ,
             &:visited {
-                padding: 16px 0;
+                padding: 0 0 0;
                 color: $color01;
             }
         }
@@ -84,32 +99,25 @@ header {
     }
     
     
-    
-    // .vibrate-2 {
-    //     &:hover{
-    //         animation: vibrate-2 0.3s linear infinite both;
-    //     }
-    // }
     .text-box {
         position: absolute;
-        top: 15%;
-        left: 5%;
-        width: 500px;
-        transform: translate(-10%, -5%);
+        top: 90px;
+        left: 30px;
+        max-width: 500px;
+        width: 100%;
+        padding-left: 20px;
+        
     }
     .text-box-headline {
         color: $color05;
         @extend %ttregular;
-        font-size: $fontsize05;
+        font-size: $fontsize06;
         
-    }
-    .show-more {
-        @extend %ttsemibold;
-        color: $color02;
     }
     .show-fullstory {
         @extend %ttsemibold;
         color: $color05;
+        margin-top: 20px;
     }
 
 }
@@ -168,14 +176,12 @@ section {
         color: $color02;
     }
     .card-img {
-        
         &:hover {
             animation: heartbeat 1.5s ease-in-out infinite both;
         }
     }
     .gallery-section {
         padding: 0;
-        
     }
     .gallery-headline {
         @extend %headline;
@@ -228,7 +234,6 @@ section {
 
 .contact-form-section {
     background: $color05;
-    
     .contact-form-headline {
         @extend %headline;
         padding: 20px 0;
@@ -261,7 +266,7 @@ section {
         width: 100%;
         padding: 7px;
         border-radius: 3px;
-        border: 1px solid #ccc;
+        border: 2px solid $color09;
         resize: none;
     }
 

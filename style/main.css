@@ -38,6 +38,19 @@
   font-style: normal;
   font-display: swap; }
 
+@media (max-width: 767.98px) {
+  .text-box {
+    display: none; }
+  .main-navigation {
+    display: none; }
+  .navbar-phone {
+    display: block; }
+  .navbar-txt {
+    margin: 0 0 15px;
+    list-style: none; }
+  .contact-form-section {
+    width: 100%; } }
+
 @font-face {
   font-family: 'Nerko One';
   src: url("../fonts/NerkoOne-Regular.eot");
@@ -84,7 +97,7 @@ section .band-story-para, section .anniversary-para, .site-footer .footer-bottom
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
-header .navbar-txt:link, header .navbar-txt:visited, header .show-more, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
+header .navbar-txt:link, header .navbar-txt:visited, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
   font-family: 'Titillium Web SB'; }
 
 header .text-box-headline, section .card-text {
@@ -140,12 +153,27 @@ section .band-story-headline, section .band-members-headline, section .gallery-h
     transform: rotate(0);
     opacity: 1; } }
 
+@media (max-width: 767.98px) {
+  .text-box {
+    display: none; }
+  .main-navigation {
+    display: none; }
+  .navbar-phone {
+    display: block; }
+  .navbar-txt {
+    margin: 0 0 15px;
+    list-style: none; }
+  .contact-form-section {
+    width: 100%; } }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)), url(../images/lp-background.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
+  header .navbar-phone {
+    display: none; }
   header .lp-logo {
     display: none;
     height: 50px;
@@ -153,22 +181,22 @@ header {
     float: left;
     margin: 5px 0; }
   header .main-nav {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
-    margin-top: 55px; }
+    padding: 50px 0 0; }
   header .main-nav-li {
-    display: inline-block;
     margin-left: 40px; }
   header .navbar-txt:link, header .navbar-txt:visited {
     padding: 8px 0;
-    color: #e9e9e9b4;
+    color: #f5f6fa;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s; }
   header .navbar-txt:hover, header .navbar-txt:active {
-    border-bottom: 2px solid #e9e9e9b4; }
+    border-bottom: 2px solid #f5f6fa; }
   header .sticky {
     position: fixed;
     top: 0;
@@ -178,29 +206,30 @@ header {
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999; }
     header .sticky .main-nav {
-      margin-top: 18px; }
+      margin: 0 0 0;
+      padding: 15px 0; }
     header .sticky .navbar-txt {
       color: #00001a; }
       header .sticky .navbar-txt:hover, header .sticky .navbar-txt:active {
         border-bottom: 2px solid #00001a; }
     header .sticky .main-nav-li:link, header .sticky .main-nav-li:visited {
-      padding: 16px 0;
+      padding: 0 0 0;
       color: #353b48; }
     header .sticky .lp-logo {
       display: block; }
   header .text-box {
     position: absolute;
-    top: 15%;
-    left: 5%;
-    width: 500px;
-    transform: translate(-10%, -5%); }
+    top: 90px;
+    left: 30px;
+    max-width: 500px;
+    width: 100%;
+    padding-left: 20px; }
   header .text-box-headline {
     color: #f5f6fa;
-    font-size: 42px; }
-  header .show-more {
-    color: #34495e; }
+    font-size: 36px; }
   header .show-fullstory {
-    color: #f5f6fa; }
+    color: #f5f6fa;
+    margin-top: 20px; }
 
 section {
   margin-top: 70px; }
@@ -305,7 +334,7 @@ section {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 2px solid #e9e9e9b4;
     resize: none; }
   .contact-form-section textarea {
     height: 100px; }
@@ -351,7 +380,7 @@ section .band-story-para, section .anniversary-para, .site-footer .footer-bottom
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
-header .navbar-txt:link, header .navbar-txt:visited, header .show-more, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
+header .navbar-txt:link, header .navbar-txt:visited, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
   font-family: 'Titillium Web SB'; }
 
 header .text-box-headline, section .card-text {
