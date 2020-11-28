@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    
     <link rel="stylesheet" href="resources/css/bootstrap-grid.css">
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
     
     <title>Linkin Park</title>
 </head>
@@ -15,7 +16,7 @@
         <nav>
           <div class="container main-navigation">
             <img src="images/lp-logo.png" alt="lp logo" class="lp-logo">
-            <ul class="main-nav">
+            <ul class="main-nav js--main-nav">
               <li class="main-nav-li">
                 <a class="navbar-txt js--scroll-to-home" href="#">Home</a>
               </li>
@@ -33,38 +34,7 @@
               </li>
             </ul>
           </div>
-        
-          <!-- responsive navbar -->
-        
-<div class="fixed-top navbar-phone">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <ul class="main-nav-phone">
-        <li class="main-nav-li-phone">
-          <a class="navbar-txt js--scroll-to-home" href="#">Home</a>
-        </li>
-        <li class="main-nav-li-phone">
-          <a class="navbar-txt js--scroll-to-gallery" href="#">Gallery</a>
-        </li>
-        <li class="main-nav-li-phone">
-          <a class="navbar-txt js--scroll-to-songs" href="#">Songs</a>
-        </li>
-        <li class="main-nav-li-phone">
-          <a class="navbar-txt js--scroll-to-members" href="#">Members</a>
-        </li>
-        <li class="main-nav-li-phone">
-          <a class="navbar-txt js--scroll-to-contact" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>
-        <!-- ends here-->
+        <a class="mobile-nav-icon js--nav-icon"><ion-icon class="js--ion" name="menu-outline"></ion-icon></a>
         </nav>
         <div class="text-box">
           <h1 class="text-box-headline">Linkin Park announces 20th anniversary reissue of ‘Hybrid Theory’</h1>
@@ -308,5 +278,6 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>

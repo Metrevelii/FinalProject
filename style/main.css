@@ -38,19 +38,6 @@
   font-style: normal;
   font-display: swap; }
 
-@media (max-width: 767.98px) {
-  .text-box {
-    display: none; }
-  .main-navigation {
-    display: none; }
-  .navbar-phone {
-    display: block; }
-  .navbar-txt {
-    margin: 0 0 15px;
-    list-style: none; }
-  .contact-form-section {
-    width: 100%; } }
-
 @font-face {
   font-family: 'Nerko One';
   src: url("../fonts/NerkoOne-Regular.eot");
@@ -97,10 +84,10 @@ section .band-story-para, section .anniversary-para, .site-footer .footer-bottom
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
-header .navbar-txt:link, header .navbar-txt:visited, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
+.navbar-txt:link, .navbar-txt:visited, .show-fullstory, section .card-title, .site-footer .contact-info-headline {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .card-text {
+.text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
@@ -156,15 +143,50 @@ section .band-story-headline, section .band-members-headline, section .gallery-h
 @media (max-width: 767.98px) {
   .text-box {
     display: none; }
-  .main-navigation {
-    display: none; }
-  .navbar-phone {
+  .mobile-nav-icon {
+    display: inline-block; }
+  .main-nav {
+    display: none;
+    float: left;
+    margin: 15px 0 0 25px; }
+  .main-nav-li {
+    display: block;
+    margin: 0 0 15px; }
+  .navbar-txt :link,
+  :visited {
+    font-size: 100%;
+    border: 0;
+    padding: 10px 0 0;
     display: block; }
-  .navbar-txt {
-    margin: 0 0 15px;
-    list-style: none; }
-  .contact-form-section {
-    width: 100%; } }
+  ul {
+    list-style-type: none; }
+  .mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    padding: 0 30px 0;
+    color: #b3d9ff;
+    font-size: 200%; }
+    .mobile-nav-icon:hover {
+      color: #313ffc88; }
+  .sticky .main-nav {
+    margin: 10px 0 0 25px; }
+  .sticky .lp-logo {
+    display: none; }
+  .navbar-txt .sticky:link, .sticky:visited {
+    font-size: 100%;
+    border: 0;
+    padding: 10px 0;
+    display: block; }
+  .sticky .mobile-nav-icon {
+    color: #00001a; }
+    .sticky .mobile-nav-icon:hover {
+      color: #313ffc88; } }
+
+@media (max-width: 991.98px) {
+  .text-box {
+    margin-top: 30px; } }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)), url(../images/lp-background.jpg);
@@ -172,64 +194,74 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
-  header .navbar-phone {
-    display: none; }
-  header .lp-logo {
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin: 5px 0; }
-  header .main-nav {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    padding: 50px 0 0; }
-  header .main-nav-li {
-    margin-left: 40px; }
-  header .navbar-txt:link, header .navbar-txt:visited {
-    padding: 8px 0;
-    color: #f5f6fa;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s; }
-  header .navbar-txt:hover, header .navbar-txt:active {
-    border-bottom: 2px solid #f5f6fa; }
-  header .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #efefef;
-    z-index: 9999; }
-    header .sticky .main-nav {
-      margin: 0 0 0;
-      padding: 15px 0; }
-    header .sticky .navbar-txt {
-      color: #00001a; }
-      header .sticky .navbar-txt:hover, header .sticky .navbar-txt:active {
-        border-bottom: 2px solid #00001a; }
-    header .sticky .main-nav-li:link, header .sticky .main-nav-li:visited {
-      padding: 0 0 0;
-      color: #353b48; }
-    header .sticky .lp-logo {
-      display: block; }
-  header .text-box {
-    position: absolute;
-    top: 90px;
-    left: 30px;
-    max-width: 500px;
-    width: 100%;
-    padding-left: 20px; }
-  header .text-box-headline {
-    color: #f5f6fa;
-    font-size: 36px; }
-  header .show-fullstory {
-    color: #f5f6fa;
-    margin-top: 20px; }
+
+.mobile-nav-icon {
+  display: none; }
+
+.lp-logo {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0; }
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 0 0;
+  list-style: none; }
+
+.main-nav-li {
+  margin-left: 40px; }
+
+.navbar-txt:link, .navbar-txt:visited {
+  padding: 8px 0;
+  color: #f5f6fa;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s; }
+
+.navbar-txt:hover, .navbar-txt:active {
+  border-bottom: 2px solid #f5f6fa; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999; }
+  .sticky .main-nav {
+    margin: 0 0 0;
+    padding: 15px 0; }
+  .sticky .navbar-txt {
+    color: #00001a; }
+    .sticky .navbar-txt:hover, .sticky .navbar-txt:active {
+      border-bottom: 2px solid #00001a; }
+  .sticky .main-nav-li:link, .sticky .main-nav-li:visited {
+    padding: 0 0 0;
+    color: #353b48; }
+  .sticky .lp-logo {
+    display: block; }
+
+.text-box {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  max-width: 500px;
+  width: 100%;
+  padding-left: 20px; }
+
+.text-box-headline {
+  color: #f5f6fa;
+  font-size: 36px; }
+
+.show-fullstory {
+  color: #f5f6fa;
+  margin-top: 20px; }
 
 section {
   margin-top: 70px; }
@@ -380,10 +412,10 @@ section .band-story-para, section .anniversary-para, .site-footer .footer-bottom
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
   font-family: 'Titillium Web EL'; }
 
-header .navbar-txt:link, header .navbar-txt:visited, header .show-fullstory, section .card-title, .site-footer .contact-info-headline {
+.navbar-txt:link, .navbar-txt:visited, .show-fullstory, section .card-title, .site-footer .contact-info-headline {
   font-family: 'Titillium Web SB'; }
 
-header .text-box-headline, section .card-text {
+.text-box-headline, section .card-text {
   font-family: 'Titillium Web Regular'; }
 
 section .band-story-headline, section .band-members-headline, section .gallery-headline, .contact-form-section .contact-form-headline {
@@ -435,3 +467,51 @@ section .band-story-headline, section .band-members-headline, section .gallery-h
   100% {
     transform: rotate(0);
     opacity: 1; } }
+
+@media (max-width: 767.98px) {
+  .text-box {
+    display: none; }
+  .mobile-nav-icon {
+    display: inline-block; }
+  .main-nav {
+    display: none;
+    float: left;
+    margin: 15px 0 0 25px; }
+  .main-nav-li {
+    display: block;
+    margin: 0 0 15px; }
+  .navbar-txt :link,
+  :visited {
+    font-size: 100%;
+    border: 0;
+    padding: 10px 0 0;
+    display: block; }
+  ul {
+    list-style-type: none; }
+  .mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    padding: 0 30px 0;
+    color: #b3d9ff;
+    font-size: 200%; }
+    .mobile-nav-icon:hover {
+      color: #313ffc88; }
+  .sticky .main-nav {
+    margin: 10px 0 0 25px; }
+  .sticky .lp-logo {
+    display: none; }
+  .navbar-txt .sticky:link, .sticky:visited {
+    font-size: 100%;
+    border: 0;
+    padding: 10px 0;
+    display: block; }
+  .sticky .mobile-nav-icon {
+    color: #00001a; }
+    .sticky .mobile-nav-icon:hover {
+      color: #313ffc88; } }
+
+@media (max-width: 991.98px) {
+  .text-box {
+    margin-top: 30px; } }

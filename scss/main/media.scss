@@ -7,27 +7,79 @@
     .text-box {
         display: none;
     }
-    .main-navigation {
-        display: none;
+    .mobile-nav-icon {
+        display: inline-block;
     }
-    .navbar-phone {
+    .main-nav {
+        display: none;
+        float: left;
+        margin:15px 0 0 25px;
+    }
+    .main-nav-li {
+        display: block;
+        margin: 0 0 15px;
+    }
+    .navbar-txt
+     &:link,
+     &:visited {
+        font-size: 100%;
+        border: 0;
+        padding: 10px 0 0;
         display: block;
     }
-    .navbar-txt {
-        margin:0 0 15px;
-        list-style: none;
+
+    ul {
+        list-style-type: none;
     }
-    .contact-form-section {
-        width: 100%;
+    
+    .mobile-nav-icon {
+        float: right;
+        cursor: pointer;
+        display: block;
+        margin-top: 30px;
+        padding: 0 30px 0;
+        color: $color06;
+        font-size: 200%;
+        &:hover {
+            color: $color10;
+        }
+    }
+
+    
+    
+    .sticky {
+        .main-nav {
+            margin: 10px 0 0 25px;
+        }
+        .lp-logo {
+            display: none;
+        }
+        .navbar-txt
+            &:link,
+            &:visited {
+                font-size: 100%;
+                border: 0;
+                padding: 10px 0;
+                 display: block;
+                } 
+        .mobile-nav-icon {
+            color: $color08;
+            &:hover {
+                color: $color10;
+            }
+        }            
     }
 }
+    
 
-// // // Medium devices (tablets, less than 992px)
-// @media (max-width: 991.98px) { 
-//     .text-box {
-//         display: none;
-//     }
-//  }
+
+// // // // Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .text-box {
+        margin-top: 30px;
+    }
+    
+ }
 
 // // Large devices (desktops, less than 1200px)
 // @media (max-width: 1199.98px) { ... }

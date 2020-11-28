@@ -5,21 +5,9 @@
 @import './../main/keyframes.scss';
 @import './../main/media.scss';
 
-//mobile
-// BASIC SETUP
 
-// .mobile-nav-icon {
-    //     display: flex;
-    //     float: right;
-    //     cursor: pointer;
-    //     display: block;
-    //     margin-top: 30px;
-    // }
-    // .menu-icon {
-    //     font-size: 200%;
-    //     color : $color05;
-    // }
-    
+
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.267)),url(../images/lp-background.jpg);
@@ -27,9 +15,10 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    .navbar-phone {
+}  
+    .mobile-nav-icon {
         display: none;
-    }
+    } 
     .lp-logo {
         display: none;
         height: 50px;
@@ -41,8 +30,12 @@ header {
     .main-nav {
         display: flex;
         justify-content: flex-end;
-        list-style: none;
         padding: 50px 0 0;
+        list-style: none;
+        // float: right;
+        // margin: 50px 0 0;
+        
+        
     }
     .main-nav-li {
         margin-left: 40px;
@@ -120,7 +113,7 @@ header {
         margin-top: 20px;
     }
 
-}
+
 
 section {
     margin-top: 70px;
