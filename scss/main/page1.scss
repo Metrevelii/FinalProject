@@ -1,6 +1,5 @@
 @import './../basic/fonts.scss';
 @import './../modules/classes.scss';
-@import './../modules/mixins.scss';
 @import './../modules/variables.scss';
 @import './../main/keyframes.scss';
 @import './../main/media.scss';
@@ -32,10 +31,6 @@ header {
         justify-content: flex-end;
         padding: 50px 0 0;
         list-style: none;
-        // float: right;
-        // margin: 50px 0 0;
-        
-        
     }
     .main-nav-li {
         margin-left: 40px;
@@ -115,25 +110,27 @@ header {
 
 
 
-section {
+.band-members {
     margin-top: 70px;
+} 
     .band-story {
         max-width: 800px;
         width: 100%;
         margin:0 auto;
         padding: 30px;
+        
+    }
+    .band-story-headline {
+        @extend %headline;
         &:after {
             display: block;
             height: 2px;
             background-color: $color03;
             content: " ";
-            width: 100px;
+            width: 70px;
             margin: 0 auto;
-            margin-top: 70px;
-        }
-    }
-    .band-story-headline {
-        @extend %headline;
+            margin-top: 20px;
+        } 
     }
     .band-story-para {
         @extend %nerko;
@@ -147,6 +144,16 @@ section {
         margin-top: 20px;
         color: $color02;
     }
+
+    .chester-bg-img {
+        background-image: url(../images/chester-farewell.png);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 550px;
+        width: 100%;
+    }
     
     .band-members-section {
         display: flex;
@@ -157,6 +164,15 @@ section {
     }
     .band-members-headline {
         @extend %headline; 
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: $color03;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+        } 
     }
     .card-title {
         @extend %ttsemibold;
@@ -221,7 +237,7 @@ section {
             transform: scale(1.03);
         }
     }
-}
+
 
 
 
@@ -317,3 +333,30 @@ section {
         padding:0 0 10px;
     }
     }
+    .playlist-section {
+        line-height: 1.5em;
+        color: $color05;
+        margin-top: 70px;
+        
+    }
+    .songs-headline {
+        @extend %headline;
+        &:after {
+            display: block;
+            height: 2px;
+            background-color: $color03;
+            content: " ";
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    
+    .playlist-li {
+        color: $color06;
+        @extend %ttregular;
+    }
+
+    
+
+    

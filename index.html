@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="American rock band - Linkin Park">
+    <meta name="keywords" content="Linkin Park, LP, Hybrid Theory">
+    <meta name="author" content="Zauri Metreveli">
+    <meta property="og:url"          content="https://metrevelii.github.io/FinalProject/" />
+    <meta property="og:type"         content="Informational Website" />
+    <meta property="og:title"        content="American rock band - Linkin Park" />
+    <meta property="og:description"  content="Linkin Park story, images and music" />
+    <meta property="og:image"        content="https://raw.githubusercontent.com/Metrevelii/FinalProject/main/images/2.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="images/favicon.jpg" type="img/png" size=16x16>
     <link rel="stylesheet" href="resources/css/bootstrap-grid.css">
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="resources/css/bootstrap.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/audio.css">
     
     <title>Linkin Park</title>
 </head>
@@ -58,6 +67,9 @@
         </p>
         </div>
       </div>
+    </section>
+    <section class="chester-background">
+      <div class="chester-bg-img"></div>
     </section>
     <section class="band-members container js--section-members">
       <h3 class="band-members-headline">Linkin Park Members</h3>
@@ -203,11 +215,48 @@
     
     
     </section>
-    <!-- <section class="playlist-section">
+    <section class="playlist-section js--section-songs">
+      <div class="container playlist-box">
+        <h4 class="songs-headline">You can listen some of my favorite Linkin Park song's here.</h3>
+      <div id="container">
+        <div id="audio-image"> 
+          <img class="cover"> 
+        </div>
+        <div id="audio-player">
+          <div id="audio-info">
+            <span class="artist"></span> - <span class="title"></span> 
+          </div>
+          <input id="volume" type="range" min="0" max="10" value="4">
+          <br>
+          <div id="buttons"> <span>
+            <button id="prev"></button>
+            <button id="play"></button>
+            <button id="pause"></button>
+            <button id="stop"></button>
+            <button id="next"></button>
+            </span> </div>
+          <div class="clearfix"></div>
+          <div id="tracker">
+            <div id="progress-bar"> <span id="progress"></span> </div>
+            <span id="duration">0:00</span> </div>
+          <div class="clearfix"></div>
+          <ul id="playlist" class="hidden">
+            <li class="playlist-li" song="In The End (Official HD Video) - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">In The End</li>
+            <li class="playlist-li" song="Crawling (One More Light Live) - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">Crawling</li>
+            <li class="playlist-li" song="My December - Linkin Park (Hybrid Theory).mp3" cover="cover1.jpg" artist="Linkin Park">My December</li>
+            <li class="playlist-li" song="High Voltage - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">High Voltage</li>
+            <li class="playlist-li" song="Talking To Myself (Official Video) - Linkin Park.mp3" cover="cover2.jpg" artist="Linkin Park">Talking To Myself</li>
+            <li class="playlist-li" song="Heavy (Official Video) - Linkin Park (feat. Kiiara).mp3" cover="cover2.jpg" artist="Linkin Park">Heavy</li>
+            <li class="playlist-li" song="One More Light (Official Video) - Linkin Park.mp3" cover="cover2.jpg" artist="Linkin Park">One More Light</li>
+            <li class="playlist-li" song="With You - Linkin Park (Hybrid Theory).mp3" cover="cover1.jpg" artist="Linkin Park">With You</li>
+            <li class="playlist-li" song="Battle Symphony (Official Lyric Video) - Linkin Park.mp3" cover="cover2.jpg" artist="Linkin Park">Battle Symphony</li>
+            <li class="playlist-li" song="Dedicated (1999 Demo) - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">Dedicated (1999 Demo)</li>
+           </ul>
+        </div>
+      </div>
+      </div>
       
-
-
-    </section> -->
+    </section>
     <section class="contact-form-section js--section-contact">
       <div class="container">
         <h2 class="contact-form-headline">We're happy to hear from you</h2>
@@ -275,9 +324,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="js/jQuery.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>
