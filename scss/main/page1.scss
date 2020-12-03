@@ -108,11 +108,9 @@ header {
         margin-top: 20px;
     }
 
-
-
-.band-members {
+    .band-members {
     margin-top: 70px;
-} 
+    } 
     .band-story {
         max-width: 800px;
         width: 100%;
@@ -185,9 +183,13 @@ header {
         color: $color02;
     }
     .card-img {
+        opacity: 0.8;
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s, opacity 0.5s;
         &:hover {
-            animation: heartbeat 1.5s ease-in-out infinite both;
-        }
+            opacity: 1;
+         }
     }
     .gallery-section {
         padding: 0;
@@ -359,4 +361,6 @@ header {
 
     
 
+    
+    
     

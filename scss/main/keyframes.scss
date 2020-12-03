@@ -1,31 +1,98 @@
-  @keyframes heartbeat {
-    from {
-      transform: scale(1);
-      transform-origin: center center;
-      animation-timing-function: ease-out;
-    }
-    10% {
-      transform: scale(0.91);
-      animation-timing-function: ease-in;
-    }
-    17% {
-      transform: scale(0.98);
-      animation-timing-function: ease-out;
-    }
-    33% {
-      transform: scale(0.87);
-      animation-timing-function: ease-in;
-    }
-    45% {
-      transform: scale(1);
-      animation-timing-function: ease-out;
-    }
-  }
-  
- 
+// animation
+//band story
+.js--wp-1 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-1.animated {
+opacity: 1;
+}
+
+// audio player
+.js--wp-2 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-2.animated {
+opacity: 1;
+}
+
+// text-box headline
+.js--wp-5 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-5.animated {
+opacity: 1;
+}
+
+// members section
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-3.animated {
+opacity: 1;
+}
 
 
-  
+.js--wp-4 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4.animated {
+opacity: 1;
+}
 
 
-  
+.js--wp-6 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-6.animated {
+opacity: 1;
+}
+
+.js--wp-7 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-7.animated {
+opacity: 1;
+}
+
+.js--wp-8 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-8.animated {
+opacity: 1;
+}
+
+.js--wp-9 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-9.animated {
+opacity: 1;
+}
+
+// contact headline
+
+.js--wp-10 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-10.animated {
+opacity: 1;
+}
