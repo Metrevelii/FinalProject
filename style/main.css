@@ -365,18 +365,19 @@ header {
   color: #34495e; }
 
 .card-img {
-  opacity: 0.8;
+  opacity: 0.7;
   width: 100%;
   height: auto;
   transition: transform 0.5s, opacity 0.5s; }
   .card-img:hover {
-    opacity: 1; }
+    opacity: 1;
+    cursor: pointer; }
 
 .gallery-section {
   padding: 0; }
 
 .gallery-headline {
-  margin-bottom: 30px; }
+  margin: 70px 0 30px 0; }
   .gallery-headline:after {
     display: block;
     height: 2px;
@@ -518,89 +519,72 @@ header {
   font-size: 24px;
   color: #40407a; }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .js--wp-1 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-1.animated {
   opacity: 1; }
 
 .js--wp-2 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-2.animated {
   opacity: 1; }
 
 .js--wp-5 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-5.animated {
   opacity: 1; }
 
 .js--wp-3 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-3.animated {
   opacity: 1; }
 
 .js--wp-4 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-4.animated {
   opacity: 1; }
 
 .js--wp-6 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-6.animated {
   opacity: 1; }
 
 .js--wp-7 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-7.animated {
   opacity: 1; }
 
 .js--wp-8 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-8.animated {
   opacity: 1; }
 
 .js--wp-9 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-9.animated {
   opacity: 1; }
 
 .js--wp-10 {
   opacity: 0;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  animation-duration: 1s; }
 
 .js--wp-10.animated {
   opacity: 1; }
