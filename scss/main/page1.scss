@@ -158,6 +158,7 @@ header {
         justify-content: space-around;
         margin-top: 70px;
         flex-wrap: wrap;
+        overflow-x: hidden;
         
     }
     .band-members-headline {
@@ -261,7 +262,7 @@ header {
         
     }
     .contact-form {
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
         padding:0 0 20px 0;
     }
